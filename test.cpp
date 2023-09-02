@@ -31,27 +31,13 @@ int main(){
     // char ch=98;
     // cout <<ch<<endl;
 
+
     // char ch1=123456;
     // cout << ch1 <<endl;
-     int sideLength;
 
-    // Input the side length of the square
-    std::cout << "Enter the side length of the square: ";
-    std::cin >> sideLength;
-
-    // Check for valid input
-    if (sideLength <= 0) {
-        std::cout << "Please enter a positive integer for side length." << std::endl;
-        return 1; 
-    }
-
-    // Loop to print the square pattern
-    for (int i = 0; i < sideLength; i++) {
-        for (int j = 0; j < sideLength; j++) {
-            std::cout << "* ";
-        }
-        std::cout << std::endl;
-    }
-
-    return 0; 
+    unsigned int a=-112;
+    cout <<a<<endl;
+       std::cout << "Hello, World!" << std::endl;
+    return 0;
+}
 }
