@@ -55,7 +55,8 @@ int main(){
     return 0;
 
     // data added
-    char g=7;
+    char g=75;
+
 }
 
 
