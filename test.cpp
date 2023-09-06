@@ -53,6 +53,9 @@ int main(){
     std::cout << "Sum: " << sum << std::endl;
 
     return 0;
+
+    // data added
+    char g=7;
 }
 
 
