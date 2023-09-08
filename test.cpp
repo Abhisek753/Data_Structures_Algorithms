@@ -57,6 +57,9 @@ int main(){
     // data added
     char g=75;
 
+
+       float f=12;
+     cout <<f <<endl;
 }
 
 
