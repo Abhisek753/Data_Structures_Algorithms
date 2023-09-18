@@ -24,3 +24,29 @@ const yearsToAdd = 1;
 
 const newDate = calculateDate(baseDate, daysToAdd, monthsToAdd, yearsToAdd);
 console.log(newDate); // Output: "2024-09-25"
+// Function to calculate a future or past time
+function calculateTime(baseTime, hoursToAdd, minutesToAdd, secondsToAdd) {
+  // Parse the baseTime string to a Date object
+  const time = new Date(`1970-01-01T${baseTime}`);
+
+  // Calculate the new time
+  time.setHours(time.getHours() + hoursToAdd);
+  time.setMinutes(time.getMinutes() + minutesToAdd);
+  time.setSeconds(time.getSeconds() + secondsToAdd);
+
+  // Format the new time as a string (e.g., "HH:MM:SS")
+  const hours = String(time.getHours()).padStart(2, '0');
+  const minutes = String(time.getMinutes()).padStart(2, '0');
+  const seconds = String(time.getSeconds()).padStart(2, '0');
+
+  return `${hours}:${minutes}:${seconds}`;
+}
+
+// Example usage:
+const baseTime = '12:30:00'; // Replace with your base time
+const hoursToAdd = 2;
+const minutesToAdd = 15;
+const secondsToAdd = 30;
+
+const newTime = calculateTime(baseTime, hoursToAdd, minutesToAdd, secondsToAdd);
+console.log(newTime); // Output: "14:45:30"
